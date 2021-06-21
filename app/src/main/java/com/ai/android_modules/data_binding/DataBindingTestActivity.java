@@ -42,6 +42,7 @@ public class DataBindingTestActivity extends AppCompatActivity {
         activityDatabindBinding.rvProductList.setAdapter(mAdapter);
         activityDatabindBinding.setProduct(new Product("雪糕","好吃"));
         activityDatabindBinding.setClickPresenter(new ClickPresenter());
+        // no
     }
 
     private List<Product> getProductList(){
