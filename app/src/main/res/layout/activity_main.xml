@@ -24,6 +24,11 @@
             android:text="@{modules.dataBinding}"
             android:onClick="@{onClickPresenter.toDataBinding}"/>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{modules.mvvM}"
+            android:onClick="@{onClickPresenter.toMvvM}"/>
     </LinearLayout>
 
 

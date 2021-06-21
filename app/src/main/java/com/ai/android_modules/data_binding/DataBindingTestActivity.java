@@ -22,6 +22,10 @@ import java.util.List;
 
 //绑定布局生成的类命名规则：xml文件名称 正向驼峰式+Binding
 
+/**
+ * 解决了Activity中声明xml中的控件，但是还没有解决创建Adapter/ViewHolder
+ */
+
 public class DataBindingTestActivity extends AppCompatActivity {
 
      private  ProductListAdapter mAdapter;
@@ -42,7 +46,6 @@ public class DataBindingTestActivity extends AppCompatActivity {
         activityDatabindBinding.rvProductList.setAdapter(mAdapter);
         activityDatabindBinding.setProduct(new Product("雪糕","好吃"));
         activityDatabindBinding.setClickPresenter(new ClickPresenter());
-        // no
     }
 
     private List<Product> getProductList(){
